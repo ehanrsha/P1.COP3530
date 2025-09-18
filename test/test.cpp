@@ -2,7 +2,9 @@
 #include <iostream>
 
 // uncomment and replace the following with your own headers
-// #include "AVL.h"
+#include "AVL.h"
+
+//Ehan Shah - UF ID 188750044
 
 using namespace std;
 
@@ -51,3 +53,35 @@ TEST_CASE("Example BST Insert", "[flag]"){
 		REQUIRE(actualOutput == expectedOutput);
 	*/
 }
+
+//these are my test cases but the code in my AVL tree function has not been implemented yet, so these tests will currently fail.
+TEST_CASE("5 Incorrect Commands", "[flag]") {
+	AVL tree;
+	REQUIRE(tree.insert(5) == true);
+	REQUIRE(tree.insert(45) == false);
+	REQUIRE(tree.insert(4656) == true);
+	REQUIRE(tree.insert(565) == false);
+	REQUIRE(tree.insert(9059696) == true);
+}
+
+TEST_CASE("Insert Command and 4 Rotations", "[flag]") {
+	AVL t;
+
+	SECTION("Rotation 1") {
+		t.insert(30); t.insert(20); t.insert(10);
+		REQUIRE(t.inorder() == std::vector<int>{10,20,30});
+	}
+	SECTION("Rotation 2") {
+		t.insert(10); t.insert(20); t.insert(30);
+		REQUIRE(t.inorder() == std::vector<int>{10,20,30});
+	}
+	SECTION("Rotation 3") {
+		t.insert(30); t.insert(10); t.insert(20);
+		REQUIRE(t.inorder() == std::vector<int>{10,20,30});
+	}
+	SECTION("Rotation 4") {
+		t.insert(10); t.insert(30); t.insert(20);
+		REQUIRE(t.inorder() == std::vector<int>{10,20,30});
+	}
+}
+
