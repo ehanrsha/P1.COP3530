@@ -6,16 +6,27 @@
 #include <iostream>
 using namespace std;
 
-bool AVL::insert(int x) {
-    return true;
+bool AVL::insert(std::string name, int UFID) {
+    data.emplace_back(name, UFID);
+    return false;
 }
 
 bool AVL::erase(int) {
     return true;
 }
 
-std::vector<int> AVL::inorder(){
-    std::vector<int> v;
-    v.push_back(0);
-    return v;
+std::vector<std::pair<std::string, int>> AVL::inorder(){
+    return data;
+}
+
+std::vector<std::pair<std::string, int>> AVL::preorder(){
+    return data;
+}
+
+void AVL::remove(int ID) {
+    for (size_t i = 0; i < data.size(); ++i) {
+        if (data[i].second == ID) {
+            data.erase(data.begin() + i);
+        }
+    }
 }

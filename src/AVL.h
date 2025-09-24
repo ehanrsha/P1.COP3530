@@ -11,9 +11,12 @@
 
 class AVL {
 public:
-    bool insert(int);
+    std::vector<std::pair<std::string, int>> data; //store all the UF student names, and ID's here.
+    bool insert(std::string name, int UFID);
     bool erase(int);
-    std::vector<int> inorder();
+    std::vector<std::pair<std::string, int>> inorder();
+    std::vector<std::pair<std::string, int>> preorder();
+    void remove(int ID);
 };
 
 
