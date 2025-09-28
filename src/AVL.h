@@ -44,6 +44,7 @@ private:
     Node* inOrderLister(Node* currentNode, vector<Node*>& listOfNodes);
     static int calculateHeight(Node* node);
     static int calculateNewHeight(Node* node);
+    void endHelper(Node* currentNode);
 
 
 

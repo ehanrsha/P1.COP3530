@@ -218,6 +218,15 @@ int AVL::calculateNewHeight(Node *node) {
     return 1 + max(calculateHeight(node->left), calculateHeight(node->right));
 }
 
+void AVL::endHelper(Node *currentNode) {
+    if (!currentNode) {
+        return;
+    }
+    endHelper(currentNode->left);
+    endHelper(currentNode->right);
+    delete currentNode;
+}
+
 void AVL::insert(std::string name, int UFID) {
     if (root == nullptr) {
         Node* newNode = new Node(name, UFID);
@@ -385,6 +394,8 @@ Node* AVL::leftRight(Node *node) {
 }
 
 AVL::~AVL() {
+    endHelper(root);
+    root = nullptr;
 }
 
 
