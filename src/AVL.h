@@ -31,24 +31,42 @@ struct Node {
 class AVL {
 private:
     Node* root = nullptr;
+
+    //helper methods
     Node* insertHelper(Node* currentNode, string name, int id); //want to keep private so cannot access on main.
+    Node* searchHelper(Node* currentNode, int id);
+    Node* searchHelper(Node* currentNode, string name, vector<int>& studentID);
+    Node* preOrderTraversalHelper(Node* curerntNode, vector<string>& studentNames);
+    Node* inOrderTraversalHelper(Node* curerntNode, vector<string>& studentNames);
+    Node* postOrderTraversalHelper(Node* curerntNode, vector<string>& studentNames);
+    Node* removeHelper(Node* currentNode, int id, bool& found);
+    Node* inorderSuccessorFinder(Node* node, Node* &copied);
+    Node* inOrderLister(Node* currentNode, vector<Node*>& listOfNodes);
     static int calculateHeight(Node* node);
+    static int calculateNewHeight(Node* node);
+
+
 
 
 public:
     //Node* returnRoot();
-    void insert(std::string name, int UFID);
-    //bool erase(int);
-    //std::vector<std::pair<std::string, int>> inorder();
-    //std::vector<std::pair<std::string, int>> preorder();
-    //void remove(int ID);
+    void insert(string name, int UFID);
+    void remove(int UFID);
+    void search(string name1);
+    void search(int id);
+    void preOrder();
+    void inOrder();
+    void postOrder();
+    void printLevelCount();
+    void removeInorder(int n);
+
 
 
     //rotations:
-    void rightRight(Node* node);
-    void leftLeft(Node* node);
-    void rightLeft(Node* node);
-    void leftRight(Node* node);
+    Node* rightRight(Node* node);
+    Node* leftLeft(Node* node);
+    Node* rightLeft(Node* node);
+    Node* leftRight(Node* node);
 
     //destructor
     ~AVL(); //use a post order traversal
