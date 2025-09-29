@@ -1,37 +1,37 @@
 # ninja log v6
 1	56	7798642983008638	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-mkdir	1f5a83ad1a2d2dc2
-209	264	7798662191440773	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	52408ff832b15615
+194	238	7808009354601842	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	52408ff832b15615
 56	6192	7798643044365902	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-download	90e696ffdfbf597e
-3	154	7798662188884184	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	ad65767c7cb5ecb5
-154	209	7798662190892142	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	b1cd7cb01fd53b74
+2	139	7808009352296450	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	ad65767c7cb5ecb5
+139	194	7808009354171755	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	b1cd7cb01fd53b74
 1	56	7798642983008638	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-mkdir	1f5a83ad1a2d2dc2
 56	6192	7798643044365902	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-download	90e696ffdfbf597e
-3	154	7798662188884184	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	ad65767c7cb5ecb5
-404	465	7798662193463981	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	c3ea1a6cce2bb58f
-154	209	7798662190892142	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	b1cd7cb01fd53b74
-209	264	7798662191440773	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	52408ff832b15615
-264	313	7798662191927919	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	4c35276bf1ca4665
-404	465	7798662193463981	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	c3ea1a6cce2bb58f
-264	313	7798662191927919	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	4c35276bf1ca4665
-313	359	7798662192387674	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	56bb192759629f48
-313	359	7798662192387674	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	56bb192759629f48
-359	403	7798662192843245	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	6e12dee2133614eb
-359	403	7798662192843245	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	6e12dee2133614eb
-404	465	7798662193463981	CMakeFiles/catch2-populate-complete	c3ea1a6cce2bb58f
-404	465	7798662193463981	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/CMakeFiles/catch2-populate-complete	c3ea1a6cce2bb58f
 2	139	7808009352296450	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	ad65767c7cb5ecb5
-2	139	7808009352296450	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	ad65767c7cb5ecb5
+366	425	7808009356472496	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	c3ea1a6cce2bb58f
 139	194	7808009354171755	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	b1cd7cb01fd53b74
-139	194	7808009354171755	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	b1cd7cb01fd53b74
 194	238	7808009354601842	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	52408ff832b15615
-194	238	7808009354601842	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	52408ff832b15615
 238	281	7808009355037302	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	4c35276bf1ca4665
+366	425	7808009356472496	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	c3ea1a6cce2bb58f
 238	281	7808009355037302	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	4c35276bf1ca4665
 281	323	7808009355457313	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	56bb192759629f48
 281	323	7808009355457313	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	56bb192759629f48
 323	365	7808009355882487	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	6e12dee2133614eb
 323	365	7808009355882487	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	6e12dee2133614eb
 366	425	7808009356472496	CMakeFiles/catch2-populate-complete	c3ea1a6cce2bb58f
-366	425	7808009356472496	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	c3ea1a6cce2bb58f
 366	425	7808009356472496	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/CMakeFiles/catch2-populate-complete	c3ea1a6cce2bb58f
-366	425	7808009356472496	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	c3ea1a6cce2bb58f
+3	117	7808084736173027	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	ad65767c7cb5ecb5
+3	117	7808084736173027	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-update	ad65767c7cb5ecb5
+117	160	7808084737698164	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	b1cd7cb01fd53b74
+117	160	7808084737698164	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-patch	b1cd7cb01fd53b74
+160	205	7808084738148620	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	52408ff832b15615
+160	205	7808084738148620	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-configure	52408ff832b15615
+205	247	7808084738578612	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	4c35276bf1ca4665
+205	247	7808084738578612	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-build	4c35276bf1ca4665
+247	292	7808084739013750	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	56bb192759629f48
+247	292	7808084739013750	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-install	56bb192759629f48
+292	335	7808084739453750	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	6e12dee2133614eb
+292	335	7808084739453750	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-test	6e12dee2133614eb
+336	397	7808084740078901	CMakeFiles/catch2-populate-complete	c3ea1a6cce2bb58f
+336	397	7808084740078901	catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	c3ea1a6cce2bb58f
+336	397	7808084740078901	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/CMakeFiles/catch2-populate-complete	c3ea1a6cce2bb58f
+336	397	7808084740078901	C:/Users/ers76/CLionProjects/COP3530 Projects/cmake-build-debug/_deps/catch2-subbuild/catch2-populate-prefix/src/catch2-populate-stamp/catch2-populate-done	c3ea1a6cce2bb58f

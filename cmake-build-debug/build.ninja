@@ -56,6 +56,13 @@ build CMakeFiles/Main.dir/src/main.cpp.obj: CXX_COMPILER__Main_unscanned_Debug C
   OBJECT_DIR = CMakeFiles\Main.dir
   OBJECT_FILE_DIR = CMakeFiles\Main.dir\src
 
+build CMakeFiles/Main.dir/src/AVL.cpp.obj: CXX_COMPILER__Main_unscanned_Debug C$:/Users/ers76/CLionProjects/COP3530$ Projects/src/AVL.cpp || cmake_object_order_depends_target_Main
+  DEP_FILE = CMakeFiles\Main.dir\src\AVL.cpp.obj.d
+  FLAGS = -Wall -Werror -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/ers76/CLionProjects/COP3530 Projects/src"
+  OBJECT_DIR = CMakeFiles\Main.dir
+  OBJECT_FILE_DIR = CMakeFiles\Main.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Main
@@ -64,7 +71,7 @@ build CMakeFiles/Main.dir/src/main.cpp.obj: CXX_COMPILER__Main_unscanned_Debug C
 #############################################
 # Link the executable Main.exe
 
-build Main.exe: CXX_EXECUTABLE_LINKER__Main_Debug CMakeFiles/Main.dir/src/main.cpp.obj
+build Main.exe: CXX_EXECUTABLE_LINKER__Main_Debug CMakeFiles/Main.dir/src/main.cpp.obj CMakeFiles/Main.dir/src/AVL.cpp.obj
   FLAGS = -Wall -Werror -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Main.dir

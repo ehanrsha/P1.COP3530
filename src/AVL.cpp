@@ -3,6 +3,7 @@
 //
 
 #include "AVL.h"
+#include <algorithm>
 #include <iostream>
 using namespace std;
 
@@ -10,7 +11,7 @@ using namespace std;
 Node* AVL::insertHelper(Node* currentNode, string name, int id) {
 
     if (id == currentNode->UFID) {
-        cout << "Unsuccessful" << endl;
+        cout << "unsuccessful" << endl;
         return currentNode;
     }
 
@@ -20,7 +21,7 @@ Node* AVL::insertHelper(Node* currentNode, string name, int id) {
         if (currentNode->right == nullptr) {
             Node* newNode = new Node(name, id);
             currentNode->right = newNode;
-            cout << "Successful" << endl;
+            cout << "successful" << endl;
             //recalculate the node height
         }
         //keep going down the tree
@@ -33,7 +34,7 @@ Node* AVL::insertHelper(Node* currentNode, string name, int id) {
         if (currentNode->left == nullptr) {
             Node* newNode = new Node(name, id);
             currentNode->left = newNode;
-            cout << "Successful" << endl;
+            cout << "successful" << endl;
         }
         //keep going down the list
         else {
@@ -231,6 +232,7 @@ void AVL::insert(std::string name, int UFID) {
     if (root == nullptr) {
         Node* newNode = new Node(name, UFID);
         root = newNode;
+        cout << "successful" << endl;
         return;
     }
     root = insertHelper(root, name, UFID); //equal to root, because of shifting
@@ -254,7 +256,7 @@ void AVL::preOrder() {
     vector<string> studentNames;
     preOrderTraversalHelper(root, studentNames);
 
-    for (int x = 0; x < studentNames.size(); x++) {
+    for (std::size_t x = 0; x < studentNames.size(); x++) {
         if (x == studentNames.size() - 1) {
             cout << studentNames[x] << endl;
         }
@@ -268,7 +270,7 @@ void AVL::inOrder() {
     vector<string> studentNames;
     inOrderTraversalHelper(root, studentNames);
 
-    for (int x = 0; x < studentNames.size(); x++) {
+    for (std::size_t x = 0; x < studentNames.size(); x++) {
         if (x == studentNames.size() - 1) {
             cout << studentNames[x] << endl;
         }
@@ -283,7 +285,7 @@ void AVL::postOrder() {
     vector<string> studentNames;
     postOrderTraversalHelper(root, studentNames);
 
-    for (int x = 0; x < studentNames.size(); x++) {
+    for (std::size_t x = 0; x < studentNames.size(); x++) {
         if (x == studentNames.size() - 1) {
             cout << studentNames[x] << endl;
         }
@@ -298,6 +300,7 @@ void AVL::postOrder() {
 void AVL::printLevelCount() {
     if (root == nullptr) {
         std::cout << 0 << std::endl;
+        return;
     }
 
     cout << calculateHeight(root) << endl;
@@ -319,7 +322,7 @@ void AVL::removeInorder(int n) {
     vector<Node *> listOfNodes;
     root = inOrderLister(root, listOfNodes); //return a list of all the nodes using inorder traversal
 
-    if ((n < 0) || (n >= listOfNodes.size())) {
+    if ((n < 0) || (static_cast<std::size_t>(n) >= listOfNodes.size())) {
         cout << "unsuccessful" << endl;
         return;
     }
@@ -343,7 +346,7 @@ void AVL::search(string name1) {
     vector<int> studentID;
     searchHelper(root, name1, studentID);
     if (studentID.size() > 0) {
-        for (int i = 0; i < studentID.size(); i++) {
+        for (std::size_t i = 0; i < studentID.size(); i++) {
             cout << studentID[i] << endl;
         }
     }
@@ -393,6 +396,7 @@ Node* AVL::leftRight(Node *node) {
     return leftLeft(node);
 }
 
+//destructor
 AVL::~AVL() {
     endHelper(root);
     root = nullptr;
