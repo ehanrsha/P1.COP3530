@@ -39,6 +39,14 @@ bool validName(string& name) {
 
 }
 
+// exactly 8 digits as typed (allows leading zeros)
+bool validUFIDToken(const string& s) {
+	if (s.size() != 8) return false;
+	for (char c : s) if (!isdigit(static_cast<unsigned char>(c))) return false;
+	return true;
+}
+
+
 int main(){
 	AVL tree;
 	string number;
@@ -76,37 +84,21 @@ int main(){
 			string name;
 			getline(inputStream, name, '"');        // read the quoted name
 
-			int id = 0;
-			if (!(inputStream >> id)) {             // read the id right after the name
+			string idtok;
+			if (!(inputStream >> idtok) || !validUFIDToken(idtok) || !validName(name)) {
 				cout << "unsuccessful" << endl;
-				continue; // don't break the whole loop on a bad line
+				continue;
 			}
-
-
-
-			bool validID = validUFID(id);
-			bool nameCorrect = validName(name);
-
-			if (nameCorrect && validID) {
-				tree.insert(name, id);
-			}
-			else {
-				cout << "unsuccessful" << endl;
-			}
+			int id = stoi(idtok);
+			tree.insert(name, id);
 		}
 		else if (command == "remove") {
-			int id = 0;
-
-			if (!(inputStream >> id)) {
+			string idtok;
+			if (!(inputStream >> idtok) || !validUFIDToken(idtok)) {
 				cout << "unsuccessful" << endl;
 				continue;
 			}
-
-			if (!validUFID(id)) {
-				cout << "unsuccessful" << endl;
-				continue;
-			}
-
+			int id = stoi(idtok);
 			tree.remove(id);
 		}
 		else if (command == "search") {
@@ -130,18 +122,13 @@ int main(){
 			}
 			// ID search
 			else {
-				int id = 0;
-				if (!(inputStream >> id)) {
-					std::cout << "unsuccessful" << std::endl;
+				string idtok;
+				if (!(inputStream >> idtok) || !validUFIDToken(idtok)) {
+					cout << "unsuccessful" << endl;
 					continue;
 				}
-
-				if (!validUFID(id)) {             // validate ID
-					std::cout << "unsuccessful" << std::endl;
-					continue;
-				}
-
-				tree.search(id);                   // call
+				int id = stoi(idtok);
+				tree.search(id);
 			}
 
 		}
